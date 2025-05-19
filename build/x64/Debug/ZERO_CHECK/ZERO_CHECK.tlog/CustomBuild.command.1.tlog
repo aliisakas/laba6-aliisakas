@@ -1,0 +1,10 @@
+^C:\USERS\АЛИСА\SOURCE\REPOS\LABA6-ALIISAKAS\BUILD\CMAKEFILES\87799187DAB9E9995651C7CA4891BAB5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Алиса/source/repos/laba6-aliisakas -BC:/Users/Алиса/source/repos/laba6-aliisakas/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Алиса/source/repos/laba6-aliisakas/build/laba6.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
